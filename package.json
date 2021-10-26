@@ -1,0 +1,23 @@
+{
+	"name": "remote-control",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app/main/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "concurrently \"npm run start:render\" \"wait-on http://localhost:3000 && npm run start:main\" ",
+		"start:main": "electron .",
+		"start:render": "cd app/renderer/src/main && npm start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hwpanda/remoteControl.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hwpanda/remoteControl/issues"
+	},
+	"homepage": "https://github.com/hwpanda/remoteControl#readme"
+}
