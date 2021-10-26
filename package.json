@@ -19,5 +19,8 @@
 	"bugs": {
 		"url": "https://github.com/hwpanda/remoteControl/issues"
 	},
-	"homepage": "https://github.com/hwpanda/remoteControl#readme"
+	"homepage": "https://github.com/hwpanda/remoteControl#readme",
+	"devDependencies": {
+		"electron": "^15.3.0"
+	}
 }

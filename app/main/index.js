@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron');
-const isDev = require('electron-is-dev');
+//const isDev = require('electron-is-dev');
 // const path = require('path');
 // const handleIPC = require('./ipc');
 // const {create: createWindow, show:showMainWindow, close:closeMainWindow} = require('./windows/main');
@@ -18,14 +18,15 @@ app.on('ready', () => {
 			contextIsolation: false,
 		},
 	});
-	if (isDev) {
-		// load the react html file into the window
-		win.loadURL('http://localhost:3000');
-	} else {
-		win.loadFile(
-			path.resolve(__dirname, '../../renderer/pages/main/index.html')
-		);
-	}
+	win.loadURL('http://localhost:3000');
+	// if (isDev) {
+	// 	// load the react html file into the window
+	// 	win.loadURL('http://localhost:3000');
+	// } else {
+	// 	win.loadFile(
+	// 		path.resolve(__dirname, '../../renderer/pages/main/index.html')
+	// 	);
+	// }
 
 	// win.on('closed', ()=>{
 	//     win = null;
