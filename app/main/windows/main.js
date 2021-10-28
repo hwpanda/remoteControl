@@ -9,7 +9,7 @@ function create() {
 		height: 600,
 		webPreferences: {
 			nodeIntegration: true,
-			//below 2 lines solve the problem of React not working in Electron
+			//below 2 lines solve the problem of require not working in Electron
 			enableRemoteModule: true,
 			contextIsolation: false,
 		},

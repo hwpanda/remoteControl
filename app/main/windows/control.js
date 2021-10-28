@@ -7,6 +7,8 @@ function create() {
 		height: 680,
 		webPreferences: {
 			nodeIntegration: true,
+			enableRemoteModule: true,
+			contextIsolation: false,
 		},
 	});
 	win.loadFile(
