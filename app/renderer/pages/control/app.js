@@ -36,4 +36,4 @@ function play(stream) {
 // 	peer.emit('robot', 'mouse', data);
 // };
 
-module.exports = app;
+//module.exports = app;
